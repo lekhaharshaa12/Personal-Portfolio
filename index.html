@@ -23,212 +23,34 @@
       </nav>
     </header>
 
-    <section id="hero" class="min-h-screen flex items-center justify-center px-6">
-      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div>
-          <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Hi, I'm <span class="text-cyan-400">Golla Lekha Harshaa</span>
-          </h1>
+    <div id="hero-container" class="min-h-screen flex items-center justify-center px-6"></div>
 
-          <p class="text-slate-300 text-lg mb-8">
-            Software Developer passionate about building full-stack web applications and solving real-world problems.
-          </p>
+    <div id="about-container" class="py-24 px-6 bg-slate-900"></div>
 
-          <div class="flex gap-4">
-            <a href="#projects" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold">
-              View Projects
-            </a>
+    <div id="projects-container" class="py-24 px-6"></div>
 
-            <a href="#contact" class="border border-cyan-400 text-cyan-400 px-6 py-3 rounded-xl">
-              Contact Me
-            </a>
-          </div>
-        </div>
+    <div id="contact-container" class="py-24 px-6 bg-slate-900"></div>
 
-        <div class="flex justify-center">
-          <img
-            src="assets/profile-placeholder.svg"
-            alt="Golla Lekha Harshaa"
-            class="w-72 h-72 object-cover rounded-full border-4 border-cyan-400 shadow-2xl"
-          />
-        </div>
-      </div>
-    </section>
+    <script>
+      async function loadSection(path, containerId) {
+        try {
+          const res = await fetch(path);
+          if (!res.ok) throw new Error('Failed to load ' + path);
+          const html = await res.text();
+          document.getElementById(containerId).innerHTML = html;
+        } catch (err) {
+          console.error(err);
+        }
+      }
 
-    <section id="about" class="py-24 px-6 bg-slate-900">
-      <div class="max-w-5xl mx-auto text-center">
-        <h2 class="text-4xl font-bold mb-8 text-cyan-400">About Me</h2>
-
-        <p class="text-slate-300 text-lg leading-8 max-w-3xl mx-auto">
-          I am a 3rd-year B.Tech Computer Science Engineering student at the
-          <span class="text-cyan-400 font-medium">Indian Institute of Technology Kanpur (IIT Kanpur)</span>.
-          I secured a rank of <span class="text-cyan-400 font-medium">252 in JEE Advanced</span> and qualified for the
-          2nd level of InPhO, INCO, and INAO. As a Software Developer, I enjoy building modern, responsive web
-          applications — from frontend interfaces with React and Tailwind CSS to full-stack MERN projects that
-          solve real campus and community problems.
-        </p>
-      </div>
-    </section>
-
-    <section id="projects" class="py-24 px-6">
-      <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-14 text-cyan-400">
-          Projects
-        </h2>
-
-        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
-            <img src="assets/project-1.svg" alt="Credit Snap" class="w-full h-52 object-cover" />
-
-            <div class="p-6">
-              <h3 class="text-2xl font-semibold mb-3">Credit Snap</h3>
-
-              <p class="text-slate-400 mb-4">
-                A full-stack MERN web application for IIT Kanpur's campus canteen ecosystem. Students can browse
-                canteens, place food orders on credit, and pay later via Razorpay, while canteen owners manage menus,
-                track debts, and monitor live orders in real time with Socket.IO.
-              </p>
-
-              <p class="text-slate-500 text-sm mb-4">
-                React · Node.js · Express · MongoDB · Socket.IO · Razorpay
-              </p>
-
-              <a
-                href="https://github.com/SaiShreyas1/Credit_Snap"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="text-cyan-400 hover:underline"
-              >
-                View on GitHub →
-              </a>
-            </div>
-          </div>
-
-          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
-            <img src="assets/project-2.svg" alt="Personal Portfolio" class="w-full h-52 object-cover" />
-
-            <div class="p-6">
-              <h3 class="text-2xl font-semibold mb-3">Personal Portfolio Website</h3>
-
-              <p class="text-slate-400 mb-4">
-                A responsive personal portfolio built with HTML, Tailwind CSS, and modern UI design. Showcases my
-                background, projects, and contact information with smooth scrolling navigation and a mobile-friendly layout.
-              </p>
-
-              <p class="text-slate-400 mb-4">About this server: a simple static portfolio showcasing projects and contact details.</p>
-
-              <p class="text-slate-500 text-sm mb-4">
-                HTML · CSS · Tailwind CSS · Responsive Design
-              </p>
-
-              <a href="https://github.com/lekhaharshaa12/Personal-Portfolio" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">
-                View on GitHub →
-              </a>
-            </div>
-          </div>
-
-          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
-            <img src="assets/project-3.svg" alt="Real-Time Web Application" class="w-full h-52 object-cover" />
-
-            <div class="p-6">
-              <h3 class="text-2xl font-semibold mb-3">Hospital Management</h3>
-
-              <p class="text-slate-400 mb-4">
-                Full Hospital Management system — patient records, appointments, and billing.
-              </p>
-
-              <p class="text-slate-500 text-sm mb-4">
-                Node.js · Express · MongoDB · Authentication
-              </p>
-
-              <a href="https://github.com/lekhaharshaa12/Hospital-Management" target="_blank" rel="noopener noreferrer" class="text-cyan-400 hover:underline">
-                View on GitHub →
-              </a>
-
-              <p class="text-slate-400 text-sm mt-3">Local copy: D:\\git\\Hospital-Management</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="py-24 px-6 bg-slate-900">
-      <div class="max-w-3xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-6 text-cyan-400">
-          Contact Me
-        </h2>
-
-        <p class="text-slate-400 text-center mb-10">
-          Feel free to reach out for collaborations, opportunities, or just a friendly hello.
-        </p>
-
-        <div class="grid sm:grid-cols-2 gap-4 mb-10 text-sm">
-          <div class="bg-slate-950 border border-slate-800 rounded-xl p-4">
-            <p class="text-slate-500 mb-1">Email</p>
-            <a href="mailto:lekhahg24@iitk.ac.in" class="text-cyan-400 hover:underline block">lekhahg24@iitk.ac.in</a>
-            <a href="mailto:lekhahg24@cse.iitk.ac.in" class="text-cyan-400 hover:underline block mt-1">lekhahg24@cse.iitk.ac.in</a>
-            <a href="mailto:harshaa2798@gmail.com" class="text-cyan-400 hover:underline block mt-1">harshaa2798@gmail.com</a>
-          </div>
-
-          <div class="bg-slate-950 border border-slate-800 rounded-xl p-4">
-            <p class="text-slate-500 mb-1">Phone</p>
-            <a href="tel:+918977794255" class="text-cyan-400 hover:underline">+91 8977794255</a>
-            <p class="text-slate-500 mt-4 mb-1">Location</p>
-            <p class="text-slate-300">IIT Kanpur, India</p>
-          </div>
-        </div>
-
-        <form
-          action="https://formsubmit.co/harshaa2798@gmail.com"
-          method="POST"
-          class="space-y-6"
-        >
-          <input type="hidden" name="_subject" value="New message from portfolio website" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="text" name="_honey" style="display:none" />
-
-          <div>
-            <label for="name" class="block text-slate-300 mb-2">Name</label>
-            <input
-              id="name"
-              name="name"
-              type="text"
-              placeholder="Your name"
-              required
-              class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 focus:outline-none focus:border-cyan-400"
-            />
-          </div>
-
-          <div>
-            <label for="email" class="block text-slate-300 mb-2">Email</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="your.email@example.com"
-              required
-              class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 focus:outline-none focus:border-cyan-400"
-            />
-          </div>
-
-          <div>
-            <label for="message" class="block text-slate-300 mb-2">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="5"
-              placeholder="Write your message here..."
-              required
-              class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 focus:outline-none focus:border-cyan-400"
-            ></textarea>
-          </div>
-
-          <button type="submit" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold hover:bg-cyan-300 transition">
-            Send Message
-          </button>
-        </form>
-      </div>
-    </section>
+      Promise.all([
+        loadSection('sections/hero.html', 'hero-container'),
+        loadSection('sections/about.html', 'about-container'),
+        loadSection('sections/projects.html', 'projects-container'),
+        loadSection('sections/contact.html', 'contact-container')
+      ]).then(() => {
+        console.log('All sections loaded');
+      });
+    </script>
   </body>
 </html>
