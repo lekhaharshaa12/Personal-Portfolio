@@ -1,10 +1,47 @@
-<section id="contact">
-  <h2>Contact Me</h2>
-  <p>Email: lekhahg24@iitk.ac.in | Phone: +91 8977794255</p>
-  <form action="https://formsubmit.co/harshaa2798@gmail.com" method="POST">
-    <input type="text" name="name" placeholder="Name" required />
-    <input type="email" name="email" placeholder="Email" required />
-    <textarea name="message" placeholder="Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+<section id="contact" class="py-24 px-6 bg-slate-900">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-4xl font-bold text-center mb-6 text-cyan-400">Contact Me</h2>
+
+    <p class="text-slate-400 text-center mb-10">Feel free to reach out for collaborations, opportunities, or just a friendly hello.</p>
+
+    <div class="grid sm:grid-cols-2 gap-4 mb-10 text-sm">
+      <div class="bg-slate-950 border border-slate-800 rounded-xl p-4">
+        <p class="text-slate-500 mb-1">Email</p>
+        <a href="mailto:lekhahg24@iitk.ac.in" class="text-cyan-400 hover:underline block">lekhahg24@iitk.ac.in</a>
+        <a href="mailto:lekhahg24@cse.iitk.ac.in" class="text-cyan-400 hover:underline block mt-1">lekhahg24@cse.iitk.ac.in</a>
+        <a href="mailto:harshaa2798@gmail.com" class="text-cyan-400 hover:underline block mt-1">harshaa2798@gmail.com</a>
+      </div>
+
+      <div class="bg-slate-950 border border-slate-800 rounded-xl p-4">
+        <p class="text-slate-500 mb-1">Phone</p>
+        <a href="tel:+918977794255" class="text-cyan-400 hover:underline">+91 8977794255</a>
+        <p class="text-slate-500 mt-4 mb-1">Location</p>
+        <p class="text-slate-300">IIT Kanpur, India</p>
+      </div>
+    </div>
+
+    <form action="https://formsubmit.co/harshaa2798@gmail.com" method="POST" class="space-y-6">
+      <input type="hidden" name="_subject" value="New message from portfolio website" />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="table" />
+      <input type="text" name="_honey" style="display:none" />
+
+      <div>
+        <label for="name" class="block text-slate-300 mb-2">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" required class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 focus:outline-none focus:border-cyan-400" />
+      </div>
+
+      <div>
+        <label for="email" class="block text-slate-300 mb-2">Email</label>
+        <input id="email" name="email" type="email" placeholder="your.email@example.com" required class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 focus:outline-none focus:border-cyan-400" />
+      </div>
+
+      <div>
+        <label for="message" class="block text-slate-300 mb-2">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 focus:outline-none focus:border-cyan-400"></textarea>
+      </div>
+
+      <button type="submit" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold hover:bg-cyan-300 transition">Send Message</button>
+    </form>
+  </div>
 </section>
