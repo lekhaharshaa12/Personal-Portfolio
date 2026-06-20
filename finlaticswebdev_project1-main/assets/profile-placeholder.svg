@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" fill="#0f172a"/>
+  <circle cx="200" cy="160" r="70" fill="#22d3ee" opacity="0.25"/>
+  <circle cx="200" cy="150" r="55" fill="#22d3ee"/>
+  <ellipse cx="200" cy="310" rx="95" ry="70" fill="#22d3ee" opacity="0.85"/>
+  <text x="200" y="380" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">GLH</text>
+</svg>

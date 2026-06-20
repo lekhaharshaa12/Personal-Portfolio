@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Golla Lekha Harshaa | Portfolio</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
@@ -12,7 +12,7 @@
   <body class="bg-slate-950 text-white">
     <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur border-b border-slate-800">
       <nav class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <h1 class="text-2xl font-bold text-cyan-400">MyPortfolio</h1>
+        <h1 class="text-2xl font-bold text-cyan-400">Harshaa</h1>
 
         <ul class="flex gap-6 text-sm md:text-base">
           <li><a href="#hero" class="hover:text-cyan-400">Home</a></li>
@@ -27,11 +27,11 @@
       <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-            Hi, I'm <span class="text-cyan-400">Your Name</span>
+            Hi, I'm <span class="text-cyan-400">Golla Lekha Harshaa</span>
           </h1>
 
           <p class="text-slate-300 text-lg mb-8">
-            Aspiring Web Developer passionate about building beautiful and responsive websites.
+            Software Developer passionate about building full-stack web applications and solving real-world problems.
           </p>
 
           <div class="flex gap-4">
@@ -47,8 +47,8 @@
 
         <div class="flex justify-center">
           <img
-            src="assets/profile-placeholder.jpg"
-            alt="Profile"
+            src="assets/profile-placeholder.svg"
+            alt="Golla Lekha Harshaa"
             class="w-72 h-72 object-cover rounded-full border-4 border-cyan-400 shadow-2xl"
           />
         </div>
@@ -60,7 +60,12 @@
         <h2 class="text-4xl font-bold mb-8 text-cyan-400">About Me</h2>
 
         <p class="text-slate-300 text-lg leading-8 max-w-3xl mx-auto">
-          I enjoy creating modern websites using HTML, CSS, and Tailwind CSS.
+          I am a 3rd-year B.Tech Computer Science Engineering student at the
+          <span class="text-cyan-400 font-medium">Indian Institute of Technology Kanpur (IIT Kanpur)</span>.
+          I secured a rank of <span class="text-cyan-400 font-medium">252 in JEE Advanced</span> and qualified for the
+          2nd level of InPhO, INCO, and INAO. As a Software Developer, I enjoy building modern, responsive web
+          applications — from frontend interfaces with React and Tailwind CSS to full-stack MERN projects that
+          solve real campus and community problems.
         </p>
       </div>
     </section>
@@ -73,17 +78,75 @@
 
         <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
-            <img src="assets/project-1.png" alt="Project" class="w-full h-52 object-cover" />
+            <img src="assets/project-1.svg" alt="Credit Snap" class="w-full h-52 object-cover" />
 
             <div class="p-6">
-              <h3 class="text-2xl font-semibold mb-3">Project One</h3>
+              <h3 class="text-2xl font-semibold mb-3">Credit Snap</h3>
 
               <p class="text-slate-400 mb-4">
-                A responsive website built using HTML, CSS, and Tailwind.
+                A full-stack MERN web application for IIT Kanpur's campus canteen ecosystem. Students can browse
+                canteens, place food orders on credit, and pay later via Razorpay, while canteen owners manage menus,
+                track debts, and monitor live orders in real time with Socket.IO.
               </p>
 
-              <a href="#" class="text-cyan-400 hover:underline">
-                View Project
+              <p class="text-slate-500 text-sm mb-4">
+                React · Node.js · Express · MongoDB · Socket.IO · Razorpay
+              </p>
+
+              <a
+                href="https://github.com/SaiShreyas1/Credit_Snap"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-cyan-400 hover:underline"
+              >
+                View on GitHub →
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
+            <img src="assets/project-2.svg" alt="Personal Portfolio" class="w-full h-52 object-cover" />
+
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-3">Personal Portfolio Website</h3>
+
+              <p class="text-slate-400 mb-4">
+                A responsive personal portfolio built with HTML, Tailwind CSS, and modern UI design. Showcases my
+                background, projects, and contact information with smooth scrolling navigation and a mobile-friendly layout.
+              </p>
+
+              <p class="text-slate-500 text-sm mb-4">
+                HTML · CSS · Tailwind CSS · Responsive Design
+              </p>
+
+              <a href="#hero" class="text-cyan-400 hover:underline">
+                View Live Site →
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden">
+            <img src="assets/project-3.svg" alt="Real-Time Web Application" class="w-full h-52 object-cover" />
+
+            <div class="p-6">
+              <h3 class="text-2xl font-semibold mb-3">Real-Time Order Dashboard</h3>
+
+              <p class="text-slate-400 mb-4">
+                Part of the Credit Snap ecosystem — a live order management dashboard with real-time notifications
+                using Socket.IO. Canteen owners accept or reject orders instantly while students receive live status updates.
+              </p>
+
+              <p class="text-slate-500 text-sm mb-4">
+                Socket.IO · React · Express · Real-Time Updates
+              </p>
+
+              <a
+                href="https://github.com/SaiShreyas1/Credit_Snap"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-cyan-400 hover:underline"
+              >
+                View on GitHub →
               </a>
             </div>
           </div>
@@ -93,16 +156,77 @@
 
     <section id="contact" class="py-24 px-6 bg-slate-900">
       <div class="max-w-3xl mx-auto">
-        <h2 class="text-4xl font-bold text-center mb-12 text-cyan-400">
+        <h2 class="text-4xl font-bold text-center mb-6 text-cyan-400">
           Contact Me
         </h2>
 
-        <form class="space-y-6">
-          <input type="text" placeholder="Name" class="w-full px-4 py-3 rounded-xl bg-slate-800" />
-          <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded-xl bg-slate-800" />
-          <textarea rows="5" placeholder="Message" class="w-full px-4 py-3 rounded-xl bg-slate-800"></textarea>
+        <p class="text-slate-400 text-center mb-10">
+          Feel free to reach out for collaborations, opportunities, or just a friendly hello.
+        </p>
 
-          <button type="submit" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold">
+        <div class="grid sm:grid-cols-2 gap-4 mb-10 text-sm">
+          <div class="bg-slate-950 border border-slate-800 rounded-xl p-4">
+            <p class="text-slate-500 mb-1">Email</p>
+            <a href="mailto:lekhahg24@iitk.ac.in" class="text-cyan-400 hover:underline block">lekhahg24@iitk.ac.in</a>
+            <a href="mailto:lekhahg24@cse.iitk.ac.in" class="text-cyan-400 hover:underline block mt-1">lekhahg24@cse.iitk.ac.in</a>
+            <a href="mailto:harshaa2798@gmail.com" class="text-cyan-400 hover:underline block mt-1">harshaa2798@gmail.com</a>
+          </div>
+
+          <div class="bg-slate-950 border border-slate-800 rounded-xl p-4">
+            <p class="text-slate-500 mb-1">Phone</p>
+            <a href="tel:+918977794255" class="text-cyan-400 hover:underline">+91 8977794255</a>
+            <p class="text-slate-500 mt-4 mb-1">Location</p>
+            <p class="text-slate-300">IIT Kanpur, India</p>
+          </div>
+        </div>
+
+        <form
+          action="https://formsubmit.co/harshaa2798@gmail.com"
+          method="POST"
+          class="space-y-6"
+        >
+          <input type="hidden" name="_subject" value="New message from portfolio website" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" style="display:none" />
+
+          <div>
+            <label for="name" class="block text-slate-300 mb-2">Name</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Your name"
+              required
+              class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 focus:outline-none focus:border-cyan-400"
+            />
+          </div>
+
+          <div>
+            <label for="email" class="block text-slate-300 mb-2">Email</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="your.email@example.com"
+              required
+              class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 focus:outline-none focus:border-cyan-400"
+            />
+          </div>
+
+          <div>
+            <label for="message" class="block text-slate-300 mb-2">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write your message here..."
+              required
+              class="w-full px-4 py-3 rounded-xl bg-slate-800 border border-slate-700 focus:outline-none focus:border-cyan-400"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold hover:bg-cyan-300 transition">
             Send Message
           </button>
         </form>

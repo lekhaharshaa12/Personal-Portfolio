@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" fill="none">
+  <rect width="800" height="400" fill="#0f172a"/>
+  <rect x="40" y="40" width="720" height="320" rx="16" fill="#1e293b" stroke="#334155"/>
+  <text x="400" y="120" text-anchor="middle" fill="#22d3ee" font-family="Arial, sans-serif" font-size="42" font-weight="bold">Credit Snap</text>
+  <text x="400" y="170" text-anchor="middle" fill="#94a3b8" font-family="Arial, sans-serif" font-size="20">Campus Canteen Credit System</text>
+  <rect x="120" y="210" width="140" height="90" rx="10" fill="#22d3ee" opacity="0.2"/>
+  <rect x="330" y="210" width="140" height="90" rx="10" fill="#22d3ee" opacity="0.35"/>
+  <rect x="540" y="210" width="140" height="90" rx="10" fill="#22d3ee" opacity="0.5"/>
+</svg>
