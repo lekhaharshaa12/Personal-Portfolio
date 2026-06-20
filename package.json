@@ -2,7 +2,8 @@
   "name": "project-1-portfolio-starter",
   "version": "1.0.0",
   "scripts": {
-    "start": "npx serve ."
+    "start": "npx serve .",
+    "build": "node build.js"
   },
   "dependencies": {
     "serve": "^14.2.1"
